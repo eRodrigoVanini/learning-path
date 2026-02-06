@@ -3,8 +3,10 @@
 const express = require("express");
 // 2 - Crio uma variável de nome qualquer para carregar o Express;
 const app = express();
-// 3 - Atribuir porta ao Express
-app.listen(3000);
+// 3 - Atribuir porta ao Express que pode possuir um segundo parâmetro para informar que o servidor foi iniciado.
+app.listen(3000, () => {
+  console.log("Acessar <b>servidor</b> em http://localhost:3000");
+});
 // #############################################################################################################################################
 
 // ################################################## ADICIONANDO PRIMEIRA RESPOSTA DO SERVIDOR ################################################
